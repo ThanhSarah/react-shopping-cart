@@ -1,8 +1,9 @@
 //feature 1
 import React from "react";
+import Products from "./component/Products";
 import data from "./data.json";
 
-class App extends React.Componenet {
+class App extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -20,13 +21,12 @@ class App extends React.Componenet {
       <main>
         <div className="content">
           <div className="main">
-            Products
+            <Products products = {this.state.products}/>
           </div>
           <div className="sidebar">
             Cart items
           </div>
         </div>
-        Product List
       </main>
       <footer>
         All right is reseved
